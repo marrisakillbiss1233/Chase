@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nova Bank Dashboard</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f3f5f8;color:#222}
+.top{background:#0a2e73;color:#fff;padding:16px 32px;display:flex;gap:30px;font-weight:bold}
+.sub{background:#fff;padding:12px 32px;border-bottom:1px solid #ddd;display:flex;gap:25px}
+.container{max-width:1400px;margin:20px auto;padding:0 20px;display:grid;grid-template-columns:2.2fr 1fr;gap:20px}
+.panel,.card{background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.panel{padding:20px}
+.filter{padding:12px;border:2px solid #0a55d4;border-radius:8px;margin:15px 0;display:flex;justify-content:space-between}
+.account{border-top:1px solid #eee;padding:10px 0;display:grid;grid-template-columns:2fr 1fr 1fr auto;align-items:center}
+.balance{font-size:27px;font-weight:bold}
+.btn{background:#0a55d4;color:#fff;border:none;padding:10px 16px;border-radius:6px;cursor:pointer}
+.more{background:#fff;color:#0a55d4;border:1px solid #0a55d4}
+.side .card{padding:20px;margin-bottom:20px}
+.house{height:190px;border-radius:8px;background:linear-gradient(135deg,#4f7cf7,#8db8ff)}
+@media(max-width:900px){.container{grid-template-columns:1fr}.account{grid-template-columns:1fr;gap:10px}.balance{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="top">
+<div>Accounts</div><div>Pay & Transfer</div><div>Collect & Deposit</div><div>Tools & Insights</div><div>Investments</div><div>Access & Security</div>
+          
+</div>
+<div class="sub"><div>Overview</div><div>Customer Insights</div><div>Statements</div><div>Profile</div></div>
+<div class="container">
+<div class="panel">
+<h1>Good Morning</h1>
+<div class="filter"><span>All Accounts</span><span>▼</span></div>
+
+<div class="account">
+<div><h3>Business Checking 9356</h3><div class="balance">$1,209.00</div><small>Available Balance</small></div>
+<div><strong>$1,209.00</strong><br>Present Balance</div>
+<div><strong>$0.00</strong><br>Available Credit</div>
+<div><button class="btn">Transfer Money</button> <button class="btn more">More</button></div>
+</div>
+
+<div class="account">
+<div><h3>Personal Checking 6245</h3><div class="balance">$21,830.47</div><small>Available Balance</small></div>
+<div><strong>$21,830.47</strong><br>Present Balance</div>
+<div><strong>$2,500.00</strong><br>Available Credit</div>
+<div><button class="btn">Transfer Money</button> <button class="btn more">More</button></div>
+</div>
+
+<div class="account">
+<div><h3>Savings 1110</h3><div class="balance">$21,830.47</div><small>Available Balance</small></div>
+<div><strong>$21,830.47</strong><br>Present Balance</div>
+<div><strong>$2,500.00</strong><br>Available Credit</div>
+<div><button class="btn">Transfer Money</button> <button class="btn more">More</button></div>
+</div>
+
+<div class="account">
+<div><h3>Encrupted Balance  ****</h3><div class="balance">$839.55</div><small>Available Balance</small></div>
+<div><strong>$839.55</strong><br>Present Balance</div>
+<div><strong>$0.00</strong><br>Available Credit</div>
+<div><button class="btn">Transfer Money</button> <button class="btn more">More</button></div>
+</div>
+</div>
+
+<div class="side">
+<div class="card"><h2>Grow your business</h2><p>View analytics and payment insights.</p></div>
+<div class="card"><div class="house"></div><h2>Nova Home</h2><p>Mortgage rates, properties and insights.</p></div>
+<div class="card"><h2>Plan & Manage</h2><p>Create savings goals and monitor progress.</p></div>
+</div>
+</div>
+</body></html>
